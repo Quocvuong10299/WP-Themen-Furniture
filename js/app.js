@@ -41,17 +41,18 @@ $(document).ready(function() {
     });
     //toggle search form
     $('.pe-7s-search').click(function () {
-        $(this).toggleClass('active-icon');
-        $('.search-component').toggleClass('active-search');
+        $('.overlay').addClass('active-search');
+    })
+    //close search
+    $('#close-search').click(function () {
+        $('.overlay').removeClass('active-search');
     })
 //    toggle config
     $('.pe-7s-config').click(function () {
-        $(this).toggleClass('active-icon');
        $('#config').toggleClass('active-config')
     })
 //    toggle cart
     $('.pe-7s-cart').click(function () {
-        $(this).toggleClass('active-icon');
         $('.cart__content').toggleClass('active-config')
     })
 //    minus and plus quantity

@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:100,100i,300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lib/slick/slick.css"/>
     <link rel="stylesheet" href="scss/style.css"/>
-    <link rel="stylesheet" href="./lib/aos/aos.css"/>
     <title>Nội Thất</title>
 </head>
 <body>
@@ -40,14 +39,7 @@
                     </div>
                     <div class="header__option">
                         <div class="">
-                            <i class="pe-7s-search font-size-icon li-with" aria-hidden="true">
-                                <div class="container search-component">
-                                    <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-                                    <form class="container" action="" method="">
-                                        <input type="text" name="keyword" class="form-control search" placeholder="Nhập sản phẩm cần tìm...">
-                                    </form>
-                                </div>
-                            </i>
+                            <i class="pe-7s-search font-size-icon li-with" aria-hidden="true"></i>
                             <i class="pe-7s-config font-size-icon li-with" aria-hidden="true">
                                 <ul id="config" class="config pl-0 d-style text-center">
                                     <li class="hover-item"><a class="nav-link" href="#">Login</a></li>
@@ -120,8 +112,15 @@
 
             </div>
         </div>
-
-<!--        <div class="header__bottom"></div>-->
+        <div id="myOverlay" class="overlay">
+            <i style="font-size: 70px;color: white;cursor: pointer" class="pe-7s-close" id="close-search" title="Close Overlay"></i>
+            <div class="overlay-content">
+                <form action="#" method="">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="main">
         <section>
@@ -477,7 +476,5 @@
 <script src="lib/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
 <script src="lib/jquery.zoom.min.js"></script>
-<script src="lib/aos/aos.js"></script>
-
 </body>
 </html>
