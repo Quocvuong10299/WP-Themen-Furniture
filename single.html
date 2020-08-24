@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous"/>
+    <!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:100,100i,300,300i,400,400i,500,500i,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" href="scss/style.css"/>
+    <title>Nội Thất</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="header__logo">
+                        <h1 class="text-color-1 font-weight-bold">K'house</h1>
+                    </div>
+                    <div class="header__menu">
+                        <nav>
+                            <ul class="d-flex justify-content-between my-0 d-style">
+                                <li class="li-with"><a href="#" class="active-menu">Trang Chủ</a></li>
+                                <li class="li-with"><a href="#" class="">Cửa Hàng</a></li>
+                                <li class="li-with"><a href="#" class="">SOFA</a></li>
+                                <li class="li-with"><a href="#" class="">Tin Tức</a></li>
+                                <li class="li-with"><a href="#" class="">Liên Hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__option">
+                        <div class="">
+                            <i class="pe-7s-search font-size-icon li-with" aria-hidden="true"></i>
+                            <i class="pe-7s-config font-size-icon li-with" aria-hidden="true"></i>
+                            <i class="pe-7s-cart font-size-icon mr-2 li-with position-relative" aria-hidden="true">
+                                <span class="total__cart">0</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="page-banner-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="page-banner-content col-xs-12">
+                            <h2>Shop</h2>
+                            <ul class="d-flex d-style li-with px-0">
+                                <li><a href="#">Home </a></li>
+                                <li class="active-top-bar"> /single</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class='zoom' id='ex1'>
+                            <img src='./images/2.jpg' width='555' height='320' alt='zoom mode'/>
+	                    </span>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="product__detail">
+                            <h2>Le Parc Minotti Chair</h2>
+                            <div class="product__detail__price mb-15">
+                                <span class="product__detail__price--new">$137.00</span>
+                                <span class="product__detail__price--old">$150.00</span>
+                            </div>
+                            <div class="product__detail--status mb-15">
+                                <strong>Tình trạng:</strong>
+                                <span><i class="fa fa-check"></i>Còn hàng</span>
+                            </div>
+                            <div class="product__detail--short-dec mb-15">
+                                <p><strong>Mô tả ngắn: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tem portul indunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="product__detail--color-list">
+                                <button class="active" style="background-color: #855439;"><i class="fa fa-check"></i>
+                                </button>
+                                <button style="background-color: #FF6801;"><i class="fa fa-check"></i></button>
+                                <button style="background-color: #DCDCDA;"><i class="fa fa-check"></i></button>
+                            </div>
+                        </div>
+                        <div class="quantity-cart">
+                            <div class="product-quantity">
+                                <input type="text" value="1" class="quantity-input">
+                                <span class="dec qtybtn"><i class="fa fa-angle-left"></i></span><span
+                                    class="inc qtybtn"><i class="fa fa-angle-right"></i></span></div>
+                            <button class="btn btn-add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+
+<!--                tabs-->
+                <div class="tabs">
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#info">Thông Tin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#especially">Đặc Trưng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#review">Đánh Giá</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="info" class="container tab-pane active"><br>
+                            <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+                        </div>
+                        <div id="especially" class="container tab-pane fade"><br>
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr>
+                                    <th>Chất Liệu</th>
+                                    <td>Cotton</td>
+                                </tr>
+                                <tr>
+                                    <th>Phong Cách</th>
+                                    <td>Casual</td>
+                                </tr>
+                                <tr>
+                                    <th>Thuộc Tính</th>
+                                    <td>Short Sleeve</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="review" class="container tab-pane fade"><br>
+                            <p>Không có đánh giá nào</p>
+                        </div>
+                    </div>
+                </div>
+<!--                relate product-->
+                <section>
+                    <div class="container mb-5">
+                        <div class="mb-70">
+                            <h1 class="section-title-big d-flex justify-content-center">Sản phẩm liên quan</h1>
+                        </div>
+                        <div class="section__product">
+                            <div class="product__item">
+                                <a href="#">
+                                    <div class="product__item-image">
+                                        <img class="image" src="images/2.jpg" alt=""/>
+                                        <div class="product__item--overlay"></div>
+                                        <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                    </div>
+                                    <div class="product__item-info text-center">
+                                        <h5 class="product__item--title">carl hansen ch25</h5>
+                                        <div class="price">
+                                            <del>50.000</del>
+                                            <span>20.000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__item">
+                                <a href="#">
+                                    <div class="product__item-image">
+                                        <img class="image" src="images/2.jpg" alt=""/>
+                                        <div class="product__item--overlay"></div>
+                                        <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                    </div>
+                                    <div class="product__item-info text-center">
+                                        <h5 class="product__item--title">carl hansen ch25</h5>
+                                        <div class="price">
+                                            <del>50.000</del>
+                                            <span>20.000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__item">
+                                <a href="#">
+                                    <div class="product__item-image">
+                                        <img class="image" src="images/2.jpg" alt=""/>
+                                        <div class="product__item--overlay"></div>
+                                        <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                    </div>
+                                    <div class="product__item-info text-center">
+                                        <h5 class="product__item--title">carl hansen ch25</h5>
+                                        <div class="price">
+                                            <del>50.000</del>
+                                            <span>20.000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__item">
+                                <a href="#">
+                                    <div class="product__item-image">
+                                        <img class="image" src="images/2.jpg" alt=""/>
+                                        <div class="product__item--overlay"></div>
+                                        <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                    </div>
+                                    <div class="product__item-info text-center">
+                                        <h5 class="product__item--title">carl hansen ch25</h5>
+                                        <div class="price">
+                                            <del>50.000</del>
+                                            <span>20.000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__item">
+                                <a href="#">
+                                    <div class="product__item-image">
+                                        <img class="image" src="images/2.jpg" alt=""/>
+                                        <div class="product__item--overlay"></div>
+                                        <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                    </div>
+                                    <div class="product__item-info text-center">
+                                        <h5 class="product__item--title">carl hansen ch25</h5>
+                                        <div class="price">
+                                            <del>50.000</del>
+                                            <span>20.000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <div class="footer ">
+        <div class="container pt-100 pb-60">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>Thông tin liên hệ</h4>
+                    <p>
+                        <strong>Địa chỉ</strong>
+                        <span>28 Green Tower, Street Name, New York City, USA</span>
+                    </p>
+                    <p>
+                        <strong>Điện thoại</strong>
+                        <span>+8880 44338899</span>
+                    </p>
+                    <p>
+                        <strong>Email</strong>
+                        <span>yourmail@outlook.com</span>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Liên kết</h4>
+                    <div class="footer-social fix">
+                        <a href="#"><i class="fa fa-facebook font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-instagram font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-rss font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-twitter font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-pinterest font-size-fa-connect"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Bản tin</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                          class="sunscribe-form validate" target="_blank" novalidate="">
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL" class="hidden">Đăng kí Email để nhận những thông tin mới nhất</label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                   placeholder="Email của bạn" required="">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                      name=""
+                                                                                                      tabindex="-1"
+                                                                                                      value=""></div>
+                            <div class="clear"><input type="submit" value="Đăng kí" name="subscribe"
+                                                      id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="copyright text-left col-sm-6 col-xs-12">
+            <p>Copyright © 2020 by Vuong-Phong</p>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="lib/jquery-2.1.4.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+<script src="lib/jquery-ui.min.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/range.js"></script>
+<script src="lib/jquery.zoom.min.js"></script>
+</body>
+</html>

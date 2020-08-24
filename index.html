@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:100,100i,300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" href="scss/style.css"/>
+    <link rel="stylesheet" href="./lib/aos/aos.css"/>
+    <title>Nội Thất</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header__top position-relative">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="header__logo">
+                        <h1 class="text-color-1 font-weight-bold">K'house</h1>
+                    </div>
+                    <div class="header__menu">
+                        <nav>
+                            <ul class="d-flex justify-content-between my-0 d-style">
+                                <li class="li-with"><a href="#" class="active-menu">Trang Chủ</a></li>
+                                <li class="li-with"><a href="./shop.html" class="">Cửa Hàng</a></li>
+                                <li class="li-with"><a href="#" class="">SOFA</a></li>
+                                <li class="li-with"><a href="#" class="">Tin Tức</a></li>
+                                <li class="li-with"><a href="#" class="">Liên Hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__option">
+                        <div class="">
+                            <i class="pe-7s-search font-size-icon li-with" aria-hidden="true">
+                                <div class="container search-component">
+                                    <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+                                    <form class="container" action="" method="">
+                                        <input type="text" name="keyword" class="form-control search" placeholder="Nhập sản phẩm cần tìm...">
+                                    </form>
+                                </div>
+                            </i>
+                            <i class="pe-7s-config font-size-icon li-with" aria-hidden="true">
+                                <ul id="config" class="config pl-0 d-style text-center">
+                                    <li class="hover-item"><a class="nav-link" href="#">Login</a></li>
+                                    <li class="hover-item"><a class="nav-link" href="#">Register</a></li>
+                                </ul>
+                            </i>
+                            <i class="pe-7s-cart font-size-icon mr-2 li-with position-relative" aria-hidden="true">
+                                <span class="total__cart">2</span>
+                                <div class="cart__content">
+                                   <div class="row mb-15">
+                                       <div class="col-3">
+                                           <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                       </div>
+                                       <div class="col-7">
+                                           <div class="d-flex flex-column">
+                                               <h6>Le Parc Minotti ...</h6>
+                                               <span class="text-small">Giá: 150.000 VND</span>
+                                               <span class="text-small">Số lượng: 2</span>
+                                           </div>
+                                       </div>
+                                       <div class="col-2">
+                                           <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                       </div>
+
+                                   </div>
+                                    <div class="row mb-15">
+                                        <div class="col-3">
+                                            <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-flex flex-column">
+                                                <h6>Le Parc Minotti ...</h6>
+                                                <span class="text-small">Giá: 150.000 VND</span>
+                                                <span class="text-small">Số lượng: 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb-15 ">
+                                        <div class="col-3">
+                                            <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-flex flex-column">
+                                                <h6>Le Parc Minotti ...</h6>
+                                                <span class="text-small">Giá: 150.000 VND</span>
+                                                <span class="text-small">Số lượng: 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Total</h4>
+                                        <h4>128.000</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-b">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!--        <div class="header__bottom"></div>-->
+    </div>
+    <div class="main">
+        <section>
+            <div class="container">
+                <div class="banner__home">
+                    <div class="banner__home--img">
+                        <img class="img-full" src="images/banner_1.jpg" alt=""/>
+                        <div class="banner__content">
+                            <h3 class="text-h3-banner text-color-2">Thiết kế hiện đại</h3>
+                            <h1 class="text-banner text-color-2">Bộ sưu tập 2020</h1>
+                            <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                    <div class="banner__home--img">
+                        <img class="img-full" src="images/banner_2.jpg" alt=""/>
+                        <div class="banner__content">
+                            <h3 class="text-h3-banner text-color-2">Đồ nội thất</h3>
+                            <h1 class="text-banner text-color-2">Bộ sưu tập 2020</h1>
+                            <div class="">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row icon__page pb-40 pt-70">
+                    <div class="col-12 col-md-3 col-lg-3 col-sm-6">
+                        <div class="icon__page--free-ship d-flex">
+                            <i class="pe-7s-world font-size-icon-big mr-3"></i>
+                            <div class="icon__page--content ">
+                                <h3 class="service-title">Miễn phí giao hàng</h3>
+                                <p class="service-title-small">miễn phí giao hàng cho hóa đơn trên 3 triệu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-sm-6">
+                        <div class="icon__page--free-exchange d-flex">
+                            <i class="pe-7s-refresh font-size-icon-big mr-3"></i>
+                            <div class="icon__page--content">
+                                <h3 class="service-title">Miễn phí đổi trả</h3>
+                                <p class="service-title-small">miễn phí đổi trả trong vòng 30 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-sm-6">
+                        <div class="icon__page--support d-flex">
+                            <i class="pe-7s-headphones font-size-icon-big mr-3"></i>
+                            <div class="icon__page--content">
+                                <h3 class="service-title">Dịch vụ hỗ trợ</h3>
+                                <p class="service-title-small">sẵn sàng hỗ trợ 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-sm-6">
+                        <div class="icon__page--black-friday d-flex">
+                            <i class="pe-7s-gift font-size-icon-big mr-3"></i>
+                            <div class="icon__page--content">
+                                <h3 class="service-title">Black friday</h3>
+                                <p class="service-title-small">Giảm giá cực sốc vào mỗi thứ sáu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-5">
+                <div class="mb-70">
+                    <h4 class="section-title-small d-flex justify-content-center">Sản phảm của chúng tôi</h4>
+                    <h1 class="section-title-big d-flex justify-content-center">Sản phẩm nổi bật</h1>
+                </div>
+                <div class="section__product">
+                    <div class="product__item">
+                        <a href="#">
+                            <div class="product__item-image">
+                                <img class="image" src="images/2.jpg" alt=""/>
+                                <div class="product__item--overlay"></div>
+                                <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                            </div>
+                            <div class="product__item-info text-center">
+                                <h5 class="product__item--title">carl hansen ch25</h5>
+                                <div class="price">
+                                    <del>50.000</del>
+                                    <span>20.000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item">
+                        <a href="#">
+                            <div class="product__item-image">
+                                <img class="image" src="images/2.jpg" alt=""/>
+                                <div class="product__item--overlay"></div>
+                                <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                            </div>
+                            <div class="product__item-info text-center">
+                                <h5 class="product__item--title">carl hansen ch25</h5>
+                                <div class="price">
+                                    <del>50.000</del>
+                                    <span>20.000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item">
+                        <a href="#">
+                            <div class="product__item-image">
+                                <img class="image" src="images/2.jpg" alt=""/>
+                                <div class="product__item--overlay"></div>
+                                <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                            </div>
+                            <div class="product__item-info text-center">
+                                <h5 class="product__item--title">carl hansen ch25</h5>
+                                <div class="price">
+                                    <del>50.000</del>
+                                    <span>20.000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item">
+                        <a href="#">
+                            <div class="product__item-image">
+                                <img class="image" src="images/2.jpg" alt=""/>
+                                <div class="product__item--overlay"></div>
+                                <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                            </div>
+                            <div class="product__item-info text-center">
+                                <h5 class="product__item--title">carl hansen ch25</h5>
+                                <div class="price">
+                                    <del>50.000</del>
+                                    <span>20.000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item">
+                        <a href="#">
+                            <div class="product__item-image">
+                                <img class="image" src="images/2.jpg" alt=""/>
+                                <div class="product__item--overlay"></div>
+                                <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                            </div>
+                            <div class="product__item-info text-center">
+                                <h5 class="product__item--title">carl hansen ch25</h5>
+                                <div class="price">
+                                    <del>50.000</del>
+                                    <span>20.000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container pb-100">
+                <div class="row o-hidden">
+                    <div class="col-xs-12 single-banner-2">
+                        <img src="images/bannr_3.jpg" alt=""/>
+                        <div class="single-banner-2--content">
+                            <h3 class="single-banner-2-big">Bộ sưu tập mới</h3>
+                            <p class="single-banner-2-small">Lorem ipsum dolor sabit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt uarnt labore eto dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-secondary">Xem Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-70">
+                <div class="mb-70 mt-4">
+                    <!--            <h4 class="section-title-small d-flex justify-content-center">Sản phảm của chúng tôi</h4>-->
+                    <h1 class="section-title-big d-flex justify-content-center">Sản phẩm khuyến mãi</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product__item mx-0">
+                            <a href="single.html">
+                                <div class="product__item-image">
+                                    <img class="image" src="images/2.jpg" alt=""/>
+                                    <div class="product__item--overlay"></div>
+                                    <a href="single.html" class="btn btn-primary product__item--content">Mua</a>
+                                </div>
+                                <div class="product__item-info text-center">
+                                    <h5 class="product__item--title">carl hansen ch25</h5>
+                                    <div class="price">
+                                        <del>50.000</del>
+                                        <span>20.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product__item mx-0">
+                            <a href="#">
+                                <div class="product__item-image">
+                                    <img class="image" src="images/2.jpg" alt=""/>
+                                    <div class="product__item--overlay"></div>
+                                    <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                </div>
+                                <div class="product__item-info text-center">
+                                    <h5 class="product__item--title">carl hansen ch25</h5>
+                                    <div class="price">
+                                        <del>50.000</del>
+                                        <span>20.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product__item mx-0">
+                            <a href="#">
+                                <div class="product__item-image">
+                                    <img class="image" src="images/2.jpg" alt=""/>
+                                    <div class="product__item--overlay"></div>
+                                    <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                </div>
+                                <div class="product__item-info text-center">
+                                    <h5 class="product__item--title">carl hansen ch25</h5>
+                                    <div class="price">
+                                        <del>50.000</del>
+                                        <span>20.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product__item mx-0">
+                            <a href="#">
+                                <div class="product__item-image">
+                                    <img class="image" src="images/2.jpg" alt=""/>
+                                    <div class="product__item--overlay"></div>
+                                    <a href="#" class="btn btn-primary product__item--content">Mua</a>
+                                </div>
+                                <div class="product__item-info text-center">
+                                    <h5 class="product__item--title">carl hansen ch25</h5>
+                                    <div class="price">
+                                        <del>50.000</del>
+                                        <span>20.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--    news-->
+        <section>
+            <div class="container mb-70">
+                <div class="mb-70">
+                    <h4 class="section-title-small d-flex justify-content-center">Mới nhất từ chúng tôi</h4>
+                    <h1 class="section-title-big d-flex justify-content-center">Bản tin</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="news_link">
+                            <img src="/images/news_1.jpg" alt=""/>
+                            <div class="news_content">
+                                <span class="text-date">12 jun 2017</span>
+                                <h4>How Furniture Is Going To Change Your Business Strategies.</h4>
+                                <span class="text-author">Mary A</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="news_link">
+                            <img src="/images/news_1.jpg" alt=""/>
+                            <div class="news_content">
+                                <span class="text-date">12 jun 2017</span>
+                                <h4>How Furniture Is Going To Change Your Business Strategies.</h4>
+                                <span class="text-author">Mary A</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="news_link">
+                            <img src="/images/news_1.jpg" alt=""/>
+                            <div class="news_content">
+                                <span class="text-date">12 jun 2017</span>
+                                <h4>How Furniture Is Going To Change Your Business Strategies.</h4>
+                                <span class="text-author">Mary A</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer ">
+        <div class="container pt-100 pb-60">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>Thông tin liên hệ</h4>
+                    <p>
+                        <strong>Địa chỉ</strong>
+                        <span>28 Green Tower, Street Name, New York City, USA</span>
+                    </p>
+                    <p>
+                        <strong>Điện thoại</strong>
+                        <span>+8880 44338899</span>
+                    </p>
+                    <p>
+                        <strong>Email</strong>
+                        <span>yourmail@outlook.com</span>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Liên kết</h4>
+                    <div class="footer-social fix">
+                        <a href="#"><i class="fa fa-facebook font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-instagram font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-rss font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-twitter font-size-fa-connect"></i></a>
+                        <a href="#"><i class="fa fa-pinterest font-size-fa-connect"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Bản tin</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="sunscribe-form validate" target="_blank" novalidate="">
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL" class="hidden">Đăng kí Email để nhận những thông tin mới nhất</label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email của bạn" required="">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Đăng kí" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="copyright text-left col-sm-6 col-xs-12">
+            <p>Copyright © 2020 by Vuong-Phong</p>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="lib/jquery.zoom.min.js"></script>
+<script src="lib/aos/aos.js"></script>
+
+</body>
+</html>
