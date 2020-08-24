@@ -21,7 +21,7 @@
 <body>
 <div class="wrapper">
     <div class="header mb-40">
-        <div class="header__top bg-color8">
+        <div class="header__top position-relative bg-color8">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="header__logo">
@@ -31,7 +31,7 @@
                         <nav>
                             <ul class="d-flex justify-content-between my-0 d-style">
                                 <li class="li-with"><a href="#" class="active-menu">Trang Chủ</a></li>
-                                <li class="li-with"><a href="#" class="">Cửa Hàng</a></li>
+                                <li class="li-with"><a href="./shop.html" class="">Cửa Hàng</a></li>
                                 <li class="li-with"><a href="#" class="">SOFA</a></li>
                                 <li class="li-with"><a href="#" class="">Tin Tức</a></li>
                                 <li class="li-with"><a href="#" class="">Liên Hệ</a></li>
@@ -41,9 +41,71 @@
                     <div class="header__option">
                         <div class="">
                             <i class="pe-7s-search font-size-icon li-with" aria-hidden="true"></i>
-                            <i class="pe-7s-config font-size-icon li-with" aria-hidden="true"></i>
+                            <i class="pe-7s-config font-size-icon li-with" aria-hidden="true">
+                                <ul id="config" class="config pl-0 d-style text-center">
+                                    <li class="hover-item"><a class="nav-link" href="#">Login</a></li>
+                                    <li class="hover-item"><a class="nav-link" href="#">Register</a></li>
+                                </ul>
+                            </i>
                             <i class="pe-7s-cart font-size-icon mr-2 li-with position-relative" aria-hidden="true">
-                                <span class="total__cart">0</span>
+                                <span class="total__cart">2</span>
+                                <div class="cart__content">
+                                    <div class="row mb-15">
+                                        <div class="col-3">
+                                            <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-flex flex-column">
+                                                <h6>Le Parc Minotti ...</h6>
+                                                <span class="text-small">Giá: 150.000 VND</span>
+                                                <span class="text-small">Số lượng: 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-3">
+                                            <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-flex flex-column">
+                                                <h6>Le Parc Minotti ...</h6>
+                                                <span class="text-small">Giá: 150.000 VND</span>
+                                                <span class="text-small">Số lượng: 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb-15 ">
+                                        <div class="col-3">
+                                            <img class="mr-2" src="images/2.jpg" style="width: 70px; height: 80px" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-flex flex-column">
+                                                <h6>Le Parc Minotti ...</h6>
+                                                <span class="text-small">Giá: 150.000 VND</span>
+                                                <span class="text-small">Số lượng: 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i title="xóa" style="font-size: 23px" class="pe-7s-trash"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Total</h4>
+                                        <h4>128.000</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-b">Mua Hàng</a>
+                                    </div>
+                                </div>
                             </i>
                         </div>
                     </div>
@@ -59,6 +121,15 @@
                     <li>/</li>
                     <li class="mx-2 active-top-bar">shop</li>
                 </ul>
+            </div>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <i style="font-size: 70px;color: white;cursor: pointer" class="pe-7s-close" id="close-search" title="Close Overlay"></i>
+            <div class="overlay-content">
+                <form action="#" method="">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </div>
     </div>
