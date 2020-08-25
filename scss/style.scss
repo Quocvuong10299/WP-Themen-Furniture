@@ -696,3 +696,30 @@ body{
 .post{
   padding: 15px 0;
 }
+.login-reg-form{
+  border: 1px solid #ddd;
+  padding: 40px;
+}
+.input_custom{
+  border: 1px solid #ddd;
+  display: block;
+  height: 40px;
+  padding: 7px 15px;
+  width: 100%;
+}
+.has-error{
+  >input{
+    border:1px solid red!important;
+  }
+}
+.error{
+  color:red;
+}
+textarea{
+  border: 1px solid #ddd;
+  display: block;
+  height: 100px;
+  padding: 7px 15px;
+  width: 100%;
+  outline: none!important;
+}

@@ -12,3 +12,9 @@ $color8:#F3F3F3;
 .bg-color8{
   background: $color8!important;
 }
+.required{
+  color: red;
+}
+.text-color-3{
+  color: $color3!important;
+}

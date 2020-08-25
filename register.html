@@ -15,12 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:100,100i,300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lib/slick/slick.css"/>
     <link rel="stylesheet" href="scss/style.css"/>
-    <link rel="stylesheet" href="./lib/aos/aos.css"/>
     <title>Nội Thất</title>
 </head>
 <body>
 <div class="wrapper">
-    <div class="header mb-70">
+    <div class="header">
         <div class="header__top position-relative bg-color8">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
@@ -30,10 +29,10 @@
                     <div class="header__menu">
                         <nav>
                             <ul class="d-flex justify-content-between my-0 d-style">
-                                <li class="li-with"><a href="#" class="active-menu">Trang Chủ</a></li>
+                                <li class="li-with"><a href="/" class="active-menu">Trang Chủ</a></li>
                                 <li class="li-with"><a href="./shop.html" class="">Cửa Hàng</a></li>
                                 <li class="li-with"><a href="#" class="">SOFA</a></li>
-                                <li class="li-with"><a href="#" class="">Tin Tức</a></li>
+                                <li class="li-with"><a href="./blog.html" class="">Tin Tức</a></li>
                                 <li class="li-with"><a href="#" class="">Liên Hệ</a></li>
                             </ul>
                         </nav>
@@ -115,11 +114,11 @@
         </div>
         <div class="header__bottom">
             <div class="page-banner-section container">
-                <h2 class="text-uppercase">Chi Tiết bản tin</h2>
+                <h2 class="text-uppercase">Đăng kí</h2>
                 <ul class="d-flex d-style li-with px-0 text-uppercase">
-                    <li class="mx-2"><a href="#">Trang chủ </a></li>
+                    <li class="mx-2"><a href="#">Home </a></li>
                     <li>/</li>
-                    <li class="mx-2 active-top-bar">Chi tiết bản tin</li>
+                    <li class="mx-2 active-top-bar">Đăng kí</li>
                 </ul>
             </div>
         </div>
@@ -134,148 +133,87 @@
         </div>
     </div>
     <div class="main">
-        <div class="container">
-            <div class="row">
-                <section class="col-md-9 sec-left">
-                    <div class="sec-banner">
-                        <img src="./images/single.jpg" alt="">
-                    </div>
-                    <div class="sec-header">
-                        <h3>How Furniture Is Going To Change Your Business Strategies.</h3>
-                        <div class="sec-tag">
-                            <div class="pr-3">
-                                <i class="fa fa-user"></i>
-                                <a href="#">Admin</a>
-                            </div>
-                            <div class="pr-3">
-                                <i class="fa fa-tags"></i>
-                                <a href="#">Uncategories</a>
-                            </div>
-                            <div class="pr-3">
-                                <i class="fa fa-comment"></i>
-                                <a href="#">Comments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium animi error harum, incidunt maxime molestiae molestias, obcaecati officia quae quaerat, quisquam temporibus ut vel veritatis? Maxime minima obcaecati ut.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto enim est facere, impedit maiores minima minus nemo nobis omnis possimus quas quo ratione repellendus reprehenderit tempora totam vero vitae voluptatibus?</p>
-                        <div class="sec-space">
-                            <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea eius, maxime molestiae, molestias natus nesciunt placeat possimus repellendus saepe, sit totam? Accusamus delectus facere ipsa, libero molestias recusandae? Molestias!</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, deserunt ducimus, eligendi esse facere laborum, perspiciatis praesentium quae quos rem repellat repudiandae sint suscipit tenetur voluptatibus. Ad minima vitae voluptate!</p>
-                        <p>Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.</p>
-                    </div>
-                    <div class="sec-cmt">
-                        <h2>Comment (01) </h2>
-                        <div class="comments">
-                            <img src="./images/ava.jpg" alt="avatar" class="cmt-avatar">
-                            <div class="cmt-content">
-                                <div class="username">
-                                    <h5 style="margin: 0;">Johnathan LV</h5>
-                                    <p style="font-size: 12px">09 hour ago</p>
-                                </div>
-                                <div class="cmt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsam, quod. Culpa et exercitationem explicabo id illo illum in iure maiores minus nobis nulla pariatur, quaerat quidem ratione vitae? Mollitia?</p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="page-section section pt-100 pb-100">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div class="login-reg-form">
+                            <form action="#" name="register">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label for="r_f_name">Họ <span class="required">*</span></label>
+                                        <input class="input_custom" name="first_name" id="r_f_name" type="text">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label for="r_l_name">Tên<span class="required">*</span></label>
+                                        <input class="input_custom" name="last_name" id="r_l_name" type="text">
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label for="r_c_name">Noi đang làm việc (Tên công ty, xí nghiệp)</label>
+                                        <input class="input_custom" name="company_name" id="r_c_name" type="text">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label for="r_email">Địa chỉ Email <span class="required">*</span></label>
+                                        <input class="input_custom" name="email" id="r_email" type="email">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label for="r_phone">SDT  <span class="required">*</span></label>
+                                        <input class="input_custom" name="phone" id="r_phone" type="text">
+                                    </div>
+<!--                                    <div class="col-12 mb-20">-->
+<!--                                        <label for="r_country">Country <span class="required">*</span></label>-->
+<!--                                        <select id="r_country">-->
+<!--                                            <option value="1">Select a country</option>-->
+<!--                                            <option value="2">bangladesh</option>-->
+<!--                                            <option value="3">Algeria</option>-->
+<!--                                            <option value="4">Afghanistan</option>-->
+<!--                                            <option value="5">Ghana</option>-->
+<!--                                            <option value="6">Albania</option>-->
+<!--                                            <option value="7">Bahrain</option>-->
+<!--                                            <option value="8">Colombia</option>-->
+<!--                                            <option value="9">Dominican Republic</option>-->
+<!--                                        </select>-->
+<!--                                    </div>-->
+                                    <div class="col-12 mb-20">
+                                        <label>Địa chỉ <span class="required">*</span></label>
+                                        <input class="input_custom" name="address" type="text" placeholder="Số nhà, tên đường">
+                                    </div>
 
-                        <div class="comments">
-                            <img src="./images/ava.jpg" alt="avatar" class="cmt-avatar">
-                            <div class="cmt-content">
-                                <div class="username">
-                                    <h5 style="margin: 0;">LV Gucci Dior 3CE </h5>
-                                    <p style="font-size: 12px">09 hour ago</p>
+                                    <div class="col-12 mb-20">
+                                        <label for="r_city">Quận / Huyện / Thành Phố <span class="required">*</span></label>
+                                        <input class="input_custom" name="city" id="r_city" type="text">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label>State / County <span class="required">*</span></label>
+                                        <input class="input_custom" name="country" type="text">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-20">
+                                        <label for="r_zip">Postcode / Zip <span class="required">*</span></label>
+                                        <input class="input_custom" name="code_zip" id="r_zip" type="text">
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label class="" for="password">Mật khẩu<span class="required">*</span></label>
+                                        <input class="input_custom" name="pass" id="password" type="password">
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label class="" for="r_c_password">Nhập lại mật khẩu<span class="required">*</span></label>
+                                        <input class="input_custom" name="repass" id="r_c_password" type="password">
+                                        <label class="show-correct text-success my-0 mt-2 d-none"><i class="pe-7s-check"></i>Khớp mật khẩu</label>
+                                    </div>
+                                    <div class="col-12 mb-20 d-flex">
+                                        <input class="mr-2 mt-1"  id="rememberme" type="checkbox">
+                                        <label for="rememberme">Tôi đã đọc rõ và chấp nhận mọi điều khoản</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="btn btn-b" value="Đăng kí" type="submit">
+                                    </div>
                                 </div>
-                                <div class="cmt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsam, quod. Culpa et exercitationem explicabo id illo illum in iure maiores minus nobis nulla pariatur, quaerat quidem ratione vitae? Mollitia?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <section class="col-md-3 sec-right">
-                    <div class="single-sidebar mb-40">
-                        <form action="#" class="sidebar-search">
-                            <input type="text" placeholder="Search here...">
-                            <button class="submit"><i class="pe-7s-search"></i></button>
-                        </form>
-                    </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Bài viết liên quan</h3>
-                        <div class="post row">
-                           <a href="#">
-                               <div class="col-5 pr-0">
-                                   <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                               </div>
-                               <div class="content col-7 pl-0">
-                                   <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                   <span class="text-author">by <a href="#">Julie Bates</a></span>
-                               </div>
-                           </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
+                            </form>
                         </div>
                     </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Danh mục</h3>
-                        <ul class="category-sidebar d-style pl-0">
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Chairs</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Tables</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Sofas</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Decorations</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Others</a></li>
-                        </ul>
-                    </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Tags</h3>
-                        <div class="tag-cloud">
-                            <a class="hover-tags" href="#">Chairs</a>
-                            <a class="hover-tags" href="#">Tables</a>
-                            <a class="hover-tags" href="#">Sofas</a>
-                            <a class="hover-tags" href="#">Lights</a>
-                            <a class="hover-tags" href="#">Lamps</a>
-                            <a class="hover-tags" href="#">curtains</a>
-                            <a class="hover-tags" href="#">cabinets</a>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
-
     </div>
     <div class="footer ">
         <div class="container pt-100 pb-60">
@@ -334,7 +272,87 @@
 <script src="lib/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
 <script src="lib/jquery.zoom.min.js"></script>
-<script src="lib/aos/aos.js"></script>
-
+<script src="lib/jquery.validate.min.js"></script>
+<script>
+    $("form[name='register']").validate({
+        rules: {
+            first_name: {
+                required: true,
+                email: true,
+                maxlength:20,
+            },
+            last_name: {
+                required: true,
+                maxlength:20,
+            },
+            email: {
+                required: true
+            },
+            phone: {
+                required: true,
+                digits: true,
+                maxlength:11,
+            },
+            address: {
+                required: true
+            },
+            city: {
+                required: true
+            },
+            country: {
+                required: true
+            },
+            code_zip: {
+                required: true
+            },
+            pass: {
+                required: true,
+                minlength:3,
+                maxlength:16
+            },
+            repass: {
+                equalTo: "#password",
+                required: true,
+            },
+        },
+        messages: {
+            pass: {
+                required: "*Password không được để trống",
+                minlength: "*Password quá ngắn! Hãy nhập trên 3 kí tự",
+                maxlength: "*Password không được quá 16 kí tự"
+            },
+            repass: {
+                equalTo: "*Không khớp mật khẩu!",
+                required: "*Trường này không được để trống",
+            },
+            email: "*Trường này không được để trống",
+            code_zip: "*Trường này không được để trống",
+            country: "*Trường này không được để trống",
+            city: "*Trường này không được để trống",
+            address: "*Trường này không được để trống",
+            fisrt_name: {
+                required: "Tên không được để trống",
+                maxlength:"Tên không quá 16 kí tự",
+            },
+            last_name: {
+                required: "Tên không được để trống",
+                maxlength:"Tên không quá 16 kí tự",
+            },
+            phone:{
+                required:  "Số điện thoại không được để trống",
+                digits: "Trường này chỉ bao gồm các số"
+            }
+        },
+        highlight: function(element) {
+            $(element).parent().addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).parent().removeClass('has-error');
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+</script>
 </body>
 </html>

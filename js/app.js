@@ -73,4 +73,17 @@ $(document).ready(function() {
     });
 //    zoom product
     $('#ex1').zoom();
+//    check password and re_password is correct
+    function checkRepass() {
+        let pass = $('#password');
+        let repass = $('#r_c_password');
+        repass.keyup(function () {
+            if(repass.val() === pass.val()){
+                $('.show-correct').addClass('d-block');
+            }else{
+                $('.show-correct').removeClass('d-block');
+            }
+        })
+    }
+    checkRepass();
 });

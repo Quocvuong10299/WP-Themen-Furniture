@@ -15,12 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:100,100i,300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lib/slick/slick.css"/>
     <link rel="stylesheet" href="scss/style.css"/>
-    <link rel="stylesheet" href="./lib/aos/aos.css"/>
     <title>Nội Thất</title>
 </head>
 <body>
 <div class="wrapper">
-    <div class="header mb-70">
+    <div class="header">
         <div class="header__top position-relative bg-color8">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
@@ -30,10 +29,10 @@
                     <div class="header__menu">
                         <nav>
                             <ul class="d-flex justify-content-between my-0 d-style">
-                                <li class="li-with"><a href="#" class="active-menu">Trang Chủ</a></li>
+                                <li class="li-with"><a href="/" class="active-menu">Trang Chủ</a></li>
                                 <li class="li-with"><a href="./shop.html" class="">Cửa Hàng</a></li>
                                 <li class="li-with"><a href="#" class="">SOFA</a></li>
-                                <li class="li-with"><a href="#" class="">Tin Tức</a></li>
+                                <li class="li-with"><a href="./blog.html" class="">Tin Tức</a></li>
                                 <li class="li-with"><a href="#" class="">Liên Hệ</a></li>
                             </ul>
                         </nav>
@@ -115,11 +114,11 @@
         </div>
         <div class="header__bottom">
             <div class="page-banner-section container">
-                <h2 class="text-uppercase">Chi Tiết bản tin</h2>
+                <h2 class="text-uppercase">thanh toán</h2>
                 <ul class="d-flex d-style li-with px-0 text-uppercase">
-                    <li class="mx-2"><a href="#">Trang chủ </a></li>
+                    <li class="mx-2"><a href="#">trang chủ </a></li>
                     <li>/</li>
-                    <li class="mx-2 active-top-bar">Chi tiết bản tin</li>
+                    <li class="mx-2 active-top-bar">thanh toán</li>
                 </ul>
             </div>
         </div>
@@ -134,148 +133,112 @@
         </div>
     </div>
     <div class="main">
-        <div class="container">
-            <div class="row">
-                <section class="col-md-9 sec-left">
-                    <div class="sec-banner">
-                        <img src="./images/single.jpg" alt="">
-                    </div>
-                    <div class="sec-header">
-                        <h3>How Furniture Is Going To Change Your Business Strategies.</h3>
-                        <div class="sec-tag">
-                            <div class="pr-3">
-                                <i class="fa fa-user"></i>
-                                <a href="#">Admin</a>
+        <div class="page-section section pt-100 pb-60 d-flex justify-content-center">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 mb-40">
+                            <form name="checkout" action="#">
+                                <h3 class="contact-info-title">Chi tiết hóa đơn</h3>
+                                <div class="row">
+                                    <div class="col-6 col-xs-12 mb-30">
+                                        <label for="b_f_name">Họ khách hàng <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_first_name" id="b_f_name" type="text">
+                                    </div>
+                                    <div class="col-6 col-xs-12 mb-30">
+                                        <label for="b_l_name">Tên khách hàng <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_last_name" id="b_l_name" type="text">
+                                    </div>
+                                    <div class="col-12 mb-30">
+                                        <label>Địa chỉ <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_address" type="text" placeholder="Street address">
+                                    </div>
+                                    <div class="col-12 mb-30">
+                                        <label for="b_city">Thành phố (Quận / Huyện) <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_city" id="b_city" type="text" placeholder="Thành  phố / Quận / Huyện">
+                                    </div>
+<!--                                    <div class="col-sm-6 col-xs-12 mb-30">-->
+<!--                                        <label>State / County <span class="required">*</span></label>-->
+<!--                                        <input class="input_custom" type="text">-->
+<!--                                    </div>-->
+<!--                                    <div class="col-sm-6 col-xs-12 mb-30">-->
+<!--                                        <label for="b_zip">Mã Zip <span class="required">*</span></label>-->
+<!--                                        <input class="input_custom" id="b_zip" type="text" placeholder="Postcode / Zip">-->
+<!--                                    </div>-->
+                                    <div class="col-sm-6 col-xs-12 mb-30">
+                                        <label for="b_email">Email <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_mail" id="b_email" type="email">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 mb-30">
+                                        <label for="b_phone">SDT  <span class="required">*</span></label>
+                                        <input class="input_custom" name="cus_phone" id="b_phone" type="text" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="order-notes">
+                                    <label for="order_note">Ghi chú</label>
+                                    <textarea id="order_note" placeholder="Ghí chú"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 mb-40">
+                            <div class="coupon-form mb-70">
+                                <h3 class="contact-info-title">Khuyến mãi</h3>
+                                <p>Nhập mã giảm giá</p>
+                                <form action="#">
+                                    <input class="input_custom" type="text" placeholder="Coupon code">
+                                    <input class="btn btn-b" type="submit" value="Áp Dụng">
+                                </form>
                             </div>
-                            <div class="pr-3">
-                                <i class="fa fa-tags"></i>
-                                <a href="#">Uncategories</a>
+                            <div class="order-wrapper">
+                                <h3 class="contact-info-title">Hóa đơn của bạn</h3>
+                                <div class="order-table table-responsive mb-30">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th class="product-name">Sản phẩm</th>
+                                            <th class="product-total">Tổng tiền</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="product-name">
+                                                Vestibulum suscipit <strong class="product-qty"> × 1</strong>
+                                            </td>
+                                            <td class="product-total">
+                                                <span class="amount">$165.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-name">
+                                                Vestibulum dictum magna	<strong class="product-qty"> × 1</strong>
+                                            </td>
+                                            <td class="product-total">
+                                                <span class="amount">$50.00</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th>Tổng tiền:</th>
+                                            <td>$215.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tổng tiền cần thanh toán:</th>
+                                            <td><strong>$215.00</strong>
+                                            </td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="order-button">
+                                        <input type="submit" class="btn btn-primary" value="Mua hàng">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="pr-3">
-                                <i class="fa fa-comment"></i>
-                                <a href="#">Comments</a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="sec-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium animi error harum, incidunt maxime molestiae molestias, obcaecati officia quae quaerat, quisquam temporibus ut vel veritatis? Maxime minima obcaecati ut.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto enim est facere, impedit maiores minima minus nemo nobis omnis possimus quas quo ratione repellendus reprehenderit tempora totam vero vitae voluptatibus?</p>
-                        <div class="sec-space">
-                            <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea eius, maxime molestiae, molestias natus nesciunt placeat possimus repellendus saepe, sit totam? Accusamus delectus facere ipsa, libero molestias recusandae? Molestias!</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, deserunt ducimus, eligendi esse facere laborum, perspiciatis praesentium quae quos rem repellat repudiandae sint suscipit tenetur voluptatibus. Ad minima vitae voluptate!</p>
-                        <p>Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.</p>
-                    </div>
-                    <div class="sec-cmt">
-                        <h2>Comment (01) </h2>
-                        <div class="comments">
-                            <img src="./images/ava.jpg" alt="avatar" class="cmt-avatar">
-                            <div class="cmt-content">
-                                <div class="username">
-                                    <h5 style="margin: 0;">Johnathan LV</h5>
-                                    <p style="font-size: 12px">09 hour ago</p>
-                                </div>
-                                <div class="cmt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsam, quod. Culpa et exercitationem explicabo id illo illum in iure maiores minus nobis nulla pariatur, quaerat quidem ratione vitae? Mollitia?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comments">
-                            <img src="./images/ava.jpg" alt="avatar" class="cmt-avatar">
-                            <div class="cmt-content">
-                                <div class="username">
-                                    <h5 style="margin: 0;">LV Gucci Dior 3CE </h5>
-                                    <p style="font-size: 12px">09 hour ago</p>
-                                </div>
-                                <div class="cmt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsam, quod. Culpa et exercitationem explicabo id illo illum in iure maiores minus nobis nulla pariatur, quaerat quidem ratione vitae? Mollitia?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <section class="col-md-3 sec-right">
-                    <div class="single-sidebar mb-40">
-                        <form action="#" class="sidebar-search">
-                            <input type="text" placeholder="Search here...">
-                            <button class="submit"><i class="pe-7s-search"></i></button>
-                        </form>
-                    </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Bài viết liên quan</h3>
-                        <div class="post row">
-                           <a href="#">
-                               <div class="col-5 pr-0">
-                                   <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                               </div>
-                               <div class="content col-7 pl-0">
-                                   <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                   <span class="text-author">by <a href="#">Julie Bates</a></span>
-                               </div>
-                           </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post row">
-                            <a href="#">
-                                <div class="col-5 pr-0">
-                                    <a href="#" class="image"><img src="images/news_1.jpg" alt="" style="width: 80px; height: 80px"></a>
-                                </div>
-                                <div class="content col-7 pl-0">
-                                    <h5 class="title"><a href="#">The history of furniture</a></h5>
-                                    <span class="text-author">by <a href="#">Julie Bates</a></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Danh mục</h3>
-                        <ul class="category-sidebar d-style pl-0">
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Chairs</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Tables</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Sofas</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Decorations</a></li>
-                            <li class="hover-item"><a href="#"><i class="pe-7s-angle-right"></i>Others</a></li>
-                        </ul>
-                    </div>
-                    <div class="single-sidebar mb-40">
-                        <h3 class="sidebar-title">Tags</h3>
-                        <div class="tag-cloud">
-                            <a class="hover-tags" href="#">Chairs</a>
-                            <a class="hover-tags" href="#">Tables</a>
-                            <a class="hover-tags" href="#">Sofas</a>
-                            <a class="hover-tags" href="#">Lights</a>
-                            <a class="hover-tags" href="#">Lamps</a>
-                            <a class="hover-tags" href="#">curtains</a>
-                            <a class="hover-tags" href="#">cabinets</a>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
-
     </div>
     <div class="footer ">
         <div class="container pt-100 pb-60">
@@ -334,7 +297,73 @@
 <script src="lib/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
 <script src="lib/jquery.zoom.min.js"></script>
-<script src="lib/aos/aos.js"></script>
-
+<script src="lib/jquery.validate.min.js"></script>
+<script>
+    $("form[name='checkout']").validate({
+        rules: {
+            cus_first_name: {
+                required: true,
+                maxlength:20,
+            },
+            cus_last_name: {
+                required: true,
+                maxlength:20,
+            },
+            cus_address: {
+                required: true
+            },
+            cus_phone: {
+                required: true,
+                digits: true,
+                maxlength:11,
+            },
+            cus_city: {
+                required: true
+            },
+            cus_mail: {
+                required:true,
+                email:true,
+            }
+        },
+        messages: {
+            pass: {
+                required: "*Password không được để trống",
+                minlength: "*Password quá ngắn! Hãy nhập trên 3 kí tự",
+                maxlength: "*Password không được quá 16 kí tự"
+            },
+            repass: {
+                equalTo: "*Không khớp mật khẩu!",
+                required: "*Trường này không được để trống",
+            },
+            cus_email:{
+                required: "Email không được để trống",
+                email:"Định dạng không phải email",
+            },
+            cus_city: "*Trường này không được để trống",
+            cus_address: "*Trường này không được để trống",
+            cus_first_name: {
+                required: "Tên không được để trống",
+                maxlength:"Tên không quá 16 kí tự",
+            },
+            cus_last_name: {
+                required: "Tên không được để trống",
+                maxlength:"Tên không quá 16 kí tự",
+            },
+            cus_phone:{
+                required:  "Số điện thoại không được để trống",
+                digits: "Trường này chỉ bao gồm các số"
+            }
+        },
+        highlight: function(element) {
+            $(element).parent().addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).parent().removeClass('has-error');
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+</script>
 </body>
 </html>
